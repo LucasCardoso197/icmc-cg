@@ -1,7 +1,9 @@
-#include <cg_window.hpp>
+#include <cg_windvane.hpp>
 
 int main(int argc, char const *argv[]) {
-  cgicmc::Window window;
+  cgicmc::WindVane window;
   window.createWindow();
+  window.loadShaders();
+  window.prepare();
   window.run();
 }
