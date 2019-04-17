@@ -7,6 +7,9 @@
 
 namespace cgicmc {
 
+#define CG_WINDOW_WIDTH 600
+#define CG_WINDOW_HEIGHT 600
+
 class Window {
 public:
   ///

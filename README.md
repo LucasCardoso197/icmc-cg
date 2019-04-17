@@ -14,5 +14,19 @@ cmake ..
 make
 ```
 
-Os arquivos executáveis gerados (`projeto1C` e `projeto1CPP`) podem ser rodados para testar a compilação do projeto.
-Uma janela vazia, com um fundo azul escuro, deve aparecer ao executá-los.
+São necessários as bibliotecas da GLAD, GLFW, OpenGL, para compilação com sucesso.
+
+Os arquivos executáveis gerados (`projeto1CPP`) podem ser rodados para testar a compilação do projeto.
+Deve aparecer um catavendo girando em um fundo azul na janela.
+
+Comandos da aplicação:
+- W: Catavento se move para cima
+- S: Catavento se move para baixo
+- A: Catavento se move para a esquerda
+- D: Catavento se move para a direita
+- Z: Aumenta o tamanho do catavento
+- X: Diminui o tamanho do catavento
+- Q: Aumenta rotação horária/Diminui rotação anti-horária
+- E: Aumenta rotação anti-horária/Diminui rotação horária
+- Espaço: Para/Resume a rotação do catavento
+- ESC: Fecha a janela
