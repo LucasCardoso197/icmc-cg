@@ -1,0 +1,4 @@
+3d_models/newdog.obj
+3d_models/dragon.obj
+3d_models/rose.obj
+3d_models/cat.obj
