@@ -1,32 +1,25 @@
 # Computação Gráfica - ICMC 2019
 
-Para compilar os arquivos, crie uma pasta local (na pasta do repositório) chamada _build_:
+Para a compilação do projeto com uso da biblioteca Assimp foi necessário o download do repositório correspondente no github (está contido na pasta external que foi enviada junto do projeto), e também foi necessária a instalação dos seguintes pacotes em ambiente Linux(além dos já necessários para utilização da glad/glfw):
+
+```
+libassimp-dev
+libdevil-dev
+libqt5opengl5-dev
+qt5-default
+```
+
+Então com as adaptações ao CMake já contido no diretório importado cg-icmc a compilação permanece a mesma, isto é:
 
 ```
 mkdir build
 cd build
-```
-
-Em seguida execute os comandos do _CMake_ para compilar e executar o exemplo
-
-```
 cmake ..
 make
 ```
 
-São necessários as bibliotecas da GLAD, GLFW, OpenGL, para compilação com sucesso.
+Por fim, copie a pasta ‘assets’ para o diretório build que acabou de criar, pois ela contém os arquivos que serão usados pelo programa, como os shaders e modelos 3d.
 
-Os arquivos executáveis gerados (`projeto1CPP`) podem ser rodados para testar a compilação do projeto.
-Deve aparecer um catavendo girando em um fundo azul na janela.
-
-Comandos da aplicação:
-- W: Catavento se move para cima
-- S: Catavento se move para baixo
-- A: Catavento se move para a esquerda
-- D: Catavento se move para a direita
-- Z: Aumenta o tamanho do catavento
-- X: Diminui o tamanho do catavento
-- Q: Aumenta rotação horária/Diminui rotação anti-horária
-- E: Aumenta rotação anti-horária/Diminui rotação horária
-- Espaço: Para/Resume a rotação do catavento
-- ESC: Fecha a janela
+Os arquivo executável gerados (`projeto2CPP`) podem ser rodados da seguinte forma:
+./projeto2CPP nomeDoModel.obj
+Se o modelo de formato .obj estiver contido no diretório /build/assets/3d_models/ o programa deve funcionar normalmente.
